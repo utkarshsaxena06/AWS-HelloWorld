@@ -11,9 +11,10 @@ pipeline {
         }
         stage('deploy') {
             steps {
-              sh '''cp -r ${WORKSPACE}/target/*.jar /home/ec2-user/hello-world
-                 cd /home/ec2-user/hello-world
-                 nohup java -Dserver.port=8888 -jar jb-hello-world-maven-0.1.0.jar &
+              sh '''whoami
+                    cp -r ${WORKSPACE}/target/*.jar /home/ec2-user/hello-world
+                    cd /home/ec2-user/hello-world
+                    nohup java -Dserver.port=8888 -jar jb-hello-world-maven-0.1.0.jar &
                  '''
             }
         }
