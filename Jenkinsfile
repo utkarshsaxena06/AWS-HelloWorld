@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'master'}
     tools { 
-        mvn 'MVN_HOME'
+        maven 'MVN_HOME'
     }
     stages {
         stage('build') {
