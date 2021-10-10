@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'mvn -f pom.xml clean package'
             }
+        }
         stage('deploy') {
             steps {
               sh 'cp -r ${WORKSPACE}/*.jar /opt/hello-world'
