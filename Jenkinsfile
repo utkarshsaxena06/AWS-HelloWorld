@@ -14,7 +14,7 @@ pipeline {
               sh '''whoami
                     cp -r ${WORKSPACE}/target/*.jar /opt/hello-world
                     cd /opt/hello-world
-                    nohup java -jar jb-hello-world-maven-0.1.0.jar -Dserver.port=8888 &
+                    java -jar jb-hello-world-maven-0.1.0.jar
                  '''
             }
         }
