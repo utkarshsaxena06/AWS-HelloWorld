@@ -17,8 +17,8 @@ pipeline {
               sh '''cp -r ${WORKSPACE}/target/*.jar /opt/hello-world
                     cd /opt/hello-world
                     #contains the java startup command
-                    #./start.sh
-                    nohup java -jar java-webapp-1.0.jar &
+                    ./start.sh
+                    #nohup java -jar java-webapp-1.0.jar &
                  '''
             }
         }
