@@ -3,6 +3,9 @@ pipeline {
     tools { 
         maven 'MVN_HOME'
     }
+    options {
+    buildDiscarder(logRotator(numToKeepStr: '5'))
+  }
     stages {
         stage('build') {
             steps {
