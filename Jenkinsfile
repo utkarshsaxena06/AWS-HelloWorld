@@ -15,9 +15,9 @@ pipeline {
         stage('deploy') {
             steps {
               sh '''cp -r ${WORKSPACE}/target/*.jar /opt/hello-world
-                    cd /opt/hello-world
+                    cd /opt/hello-world && ./start.sh
                     #contains the java startup command
-                    ./start.sh
+                    #./start.sh
                     #nohup java -jar java-webapp-1.0.jar &
                  '''
             }
