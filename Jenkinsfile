@@ -18,6 +18,7 @@ pipeline {
                     cd /opt/hello-world
                     #contains the java startup command
                     ./start.sh
+                    date
                     #java -Dhudson.util.ProcessTree.disable=true -jar java-webapp-1.0.jar &
                  '''
             }
