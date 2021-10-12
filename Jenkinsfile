@@ -18,7 +18,7 @@ pipeline {
                     cd /opt/hello-world
                     #contains the java startup command
                     #./start.sh
-                    java -jar java-webapp-1.0.jar >/dev/null 2>&1 &
+                    java -jar java-webapp-1.0.jar >/dev/null 2>&1
                  '''
             }
         }
