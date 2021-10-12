@@ -19,7 +19,6 @@ pipeline {
                     #contains the java startup command
                     ./start.sh
                     #nohup java -jar java-webapp-1.0.jar &
-                    date
                  '''
             }
         }
