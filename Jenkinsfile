@@ -18,7 +18,7 @@ pipeline {
                     cd /opt/hello-world
                     #sudo systemctl start jar.service
                     #contains the java startup command
-                    sh start.sh
+                    ./start.sh
                     #java -jar java-webapp-1.0.jar >/dev/null 2>&1
                  '''
             }
