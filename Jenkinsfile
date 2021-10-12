@@ -15,8 +15,6 @@ pipeline {
                     cp -r ${WORKSPACE}/target/*.jar /opt/hello-world
                     cd /opt/hello-world
                     java -jar jb-hello-world-maven-0.1.0.jar
-                    date
-                    echo "date"
                  '''
             }
         }
