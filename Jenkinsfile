@@ -18,6 +18,7 @@ pipeline {
                     cd /opt/hello-world
                     #contains the java startup command
                     ./start.sh
+                    date
                  '''
             }
         }
