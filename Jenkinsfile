@@ -15,10 +15,10 @@ pipeline {
         stage('deploy') {
             steps {
               sh '''cp -r ${WORKSPACE}/target/*.jar /opt/hello-world
-                    cd /opt/hello-world && ./start.sh
+                    cd /opt/hello-world
                     #contains the java startup command
                     #./start.sh
-                    #nohup java -jar java-webapp-1.0.jar &
+                    java -Dhudson.util.ProcessTree.disable=true -jar java-webapp-1.0.jar &
                  '''
             }
         }
