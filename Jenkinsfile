@@ -17,7 +17,7 @@ pipeline {
               sh '''cp -r ${WORKSPACE}/target/*.jar /opt/hello-world
                     cd /opt/hello-world
                     #contains the java startup command
-                    sh -ex start.sh
+                    ./start.sh
                     date
                  '''
             }
