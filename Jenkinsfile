@@ -13,7 +13,8 @@ pipeline {
             steps {
               sh '''cp -r ${WORKSPACE}/target/*.jar /opt/hello-world
                     cd /opt/hello-world
-                    java -jar java-webapp-1.0.jar &
+                    #contains the java startup command
+                    ./startup.sh
                  '''
             }
         }
