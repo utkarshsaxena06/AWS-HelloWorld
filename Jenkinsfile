@@ -16,11 +16,8 @@ pipeline {
             steps {
               sh '''cp -r ${WORKSPACE}/target/*.jar /opt/hello-world
                     cd /opt/hello-world
-                    #sudo systemctl start jar.service
-                    #contains the java startup command
                     ./start.sh
-                    #java -jar java-webapp-1.0.jar >/dev/null 2>&1
-                 '''
+                    '''
             }
         }
     }
