@@ -16,7 +16,7 @@ public class App
 
   public String enMsg()
   {
-    return "Hello World!";
+    return "Testing webhook!";
   }
 
   private static String requestInfoToString(Request request) {
