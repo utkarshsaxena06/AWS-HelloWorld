@@ -41,7 +41,7 @@ public class App
         System.out.println(requestInfoToString(request));
     });
 
-    get("/", (request,response) -> "Hello World!");
+    get("/", (request,response) -> "Testing Webhook!");
 
   }
 
